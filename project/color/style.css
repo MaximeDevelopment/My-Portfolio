@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(./font/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    background-color: rgba(25,63,179,0.783);
+}
+
+.name{
+    padding: 70px;
+}
+
+.name p{
+    text-align: center;
+    font-size: 2em;
+    font-family: Oswald;
+}
+.div-color{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 0 5%;
+    background-color: white;
+    padding: 20px;
+}
+.oui{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opacity-input{
+    margin: 0 30px;
+}
+
+.color{
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.change1{
+    background-color: rgb(180, 180, 180);
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 2em;
+    margin: 40px;
+    border: black solid 5px;
+    font-family: Roboto;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0 20px 0;
+    margin: 0 30px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}

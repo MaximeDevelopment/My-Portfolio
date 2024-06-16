@@ -1,0 +1,640 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../font/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@keyframes header{
+    from{
+        translate: -100vw 0;
+    }
+    to{
+        translate: 0;
+    }
+}
+
+@keyframes divpro{
+    from{
+        translate: -100vw 0;
+    }
+    to{
+        translate: 0;
+    }
+}
+
+@keyframes title-skills{
+    from{
+        translate: -100vw 0;
+    }
+    to{
+        translate: 0;
+    }
+}
+
+@keyframes contact{
+    from{
+        translate: -100vw 0;
+    }
+    to{
+        translate: 0;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(#2E2F2F,#4B4C4C);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+.cursor{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(50vw), 50vh);
+}
+  
+.cursor2{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+  
+.cursorinnerhover{
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+.langue{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fra, .eng, .deu{
+    margin: 10px;
+}
+
+.fra:hover, .eng:hover, .deu:hover{
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+.haut{
+    display: flex;
+}
+
+i{
+    color: white
+}
+
+.img{
+    position: absolute;
+    top: 325px;
+    translate: 0 -50%;
+    right: 18%;
+    width: 650px;
+}
+
+.header{
+    font-family: Oswald;
+    font-size: 5em;
+    color: white;
+    text-wrap: balance;
+    margin-right: 1000px;
+    padding: 100px;
+    animation: header 1s;
+}
+
+.about{
+    margin: 130px;
+    border: rgb(193, 232, 147) solid 2px;
+    border-radius: 5px;
+    background-color: #2E2F2F;
+}
+
+.about-p{
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: Roboto;
+    text-align: start;
+    color: white;
+}
+
+.tableau{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    translate: 0 -50%;
+    right: 5em;
+}
+.tableau a{
+    border: solid;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.tableau a:visited{
+    color: white;
+}
+.tableau i{
+    padding: 15px 10px;
+    font-size: 3em;
+}
+
+.tableau i::before{
+    z-index: 2;
+    position: relative;
+}
+
+.trans{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #828DCE;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.5s linear;
+}
+
+.tableau i:hover .trans{
+    width: 100%; 
+}
+
+.tableau a:not(:last-child){
+    border-bottom: none;
+}
+
+.skills-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+}
+
+.skills-img img{
+    width: 300px;
+    padding-top: 20px;
+}
+
+.title-skills{
+    text-align: center;
+    padding: 20px;
+    margin-top: 150px;
+    font-size: 2em;
+    font-family: Oswald;
+    animation: contact 1s;
+}
+    
+.divpro{
+    padding: 100px 0 0 0;
+    animation: divpro 1s;
+}
+
+.myproject{
+    font-size: 4em;
+    font-family: Oswald;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contenu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pro{
+    font-size: 2em;
+    font-family: Oswald;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imga{
+    display: block;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    object-fit:  cover;
+}
+
+.imga-a{
+    transition: transform .3s;
+}
+
+.imga-a:hover {
+    transform: scale(1.1);
+}
+
+footer{
+    font-family: Oswald;
+}
+
+.contact{
+    padding-top: 100px;
+    font-family: Oswald;
+    text-align: center;
+}
+
+.padding{
+    padding-top: 2em;
+    display: flex;
+}
+
+.git-x{
+    flex-direction: row;
+    flex-wrap: balance;
+    flex-basis: 100%;
+}
+
+.box{
+    background-color: #636363;
+}
+
+.box2{
+    background-color: #1DA1F2;
+}
+
+.box3{
+    background-color: #0077b5;
+}
+
+.box4{
+    background-color: #7289da;
+}
+
+.box, .box2, .box3, .box4{
+    padding: 1em;
+    font-size: 2em;
+    flex-basis: 50%;
+    text-align: center;
+    color: white;
+}
+
+.git-x>a{
+    text-decoration: none;
+}
+
+.box:hover, .box2:hover, .box3:hover, .box4:hover{
+    filter: brightness(0.90);
+}
+
+.adress{
+    font-size: 2em;
+    background-color: #67729D;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.adress:hover{
+    filter: brightness(0.90);
+}
+
+.email{
+    color: white;
+    text-decoration: none;
+}
+
+.test{
+    margin-bottom: 200px;
+    display: flex;
+}
+
+.contact{
+    font-size: 4em;
+    animation: contact 1s;
+}
+
+.git-x>a>.box>i, .box2>i, .box3>i, .box4>i{
+    padding-left: 10px;
+}
+
+.adress>.email>i{
+    padding-left: 10px;
+}
+@media screen and (max-width: 1680px){
+    .header{
+        font-family: Oswald;
+        font-size: 5em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 750px;
+        padding: 100px;
+        animation: header 1s;
+    } 
+}
+
+@media screen and (max-width: 1460px){
+    .header{
+        font-family: Oswald;
+        font-size: 4.5em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 650px;
+        padding: 100px;
+        animation: header 1s;
+    } 
+}
+
+@media screen and (max-width: 1390px){
+    .header{
+        font-family: Oswald;
+        font-size: 4em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 600px;
+        padding: 100px;
+        animation: header 1s;
+    } 
+
+    .img{
+        width: 650px;
+    }
+    .imga{
+        width: 450px;
+        height: 270px;
+    }
+
+    .skills-img img{
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .header{
+        font-family: Oswald;
+        font-size: 3.8em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 600px;
+        padding: 100px;
+        animation: header 1s;
+    } 
+}
+
+@media screen and (max-width: 1250px){
+    .header{
+        font-family: Oswald;
+        font-size: 3.5em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 900px;
+        padding: 100px;
+        animation: header 1s;
+    } 
+
+    .img{
+        width: 535px;
+    }
+    .imga{
+        width: 364px;
+        height: 218px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .tableau{
+        right: 3em;
+    }
+} 
+
+@media screen and (max-width: 1110px) {
+    .tableau{
+        right: 2em;
+    }
+    .img{
+        right: 7%
+    }
+
+    .skills-img img{
+        width: 200px;
+        padding: 15px;
+    }
+} 
+
+@media screen and (max-width: 1000px) {
+    .tableau{
+        right: 1em;
+    }
+    .img{
+        right: 5%;
+    }
+    .cursor, .cursor2{
+        display: none;
+    }
+
+    .imga{
+        width: 291px;
+        height: 174px;
+    }
+} 
+
+@media screen and (max-width: 936px){
+    .tableau{
+        visibility: hidden;
+    }
+
+    .img{
+        right: 0%;
+    }
+
+    .about{
+        margin: 50px 100px 25px;
+    }
+
+    .imga{
+        width: 400px;
+        height: 240px;
+    }
+
+    .header{
+        font-family: Oswald;
+        font-size: 3em;
+        color: white;
+        text-wrap: balance;
+        margin-right: 900px;
+        padding: 100px;
+        animation: header 1s;
+    }
+
+}
+
+@media screen and (max-width: 810px){
+
+    .header{
+        margin-right: 0;
+        margin: 50px 0 30px 0;
+        padding: 20px;
+        justify-content: balance;
+        text-align: center;
+        animation: header 1s;
+    }
+
+    .img{
+        visibility: hidden;
+    }
+
+    .divpro{
+        padding: 0px;
+    }
+
+    .pro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 720px){
+
+    .padding{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .box{
+        grid-area: 1 / 1 / 2 / 6;
+    }
+    .box2{
+        grid-area: 2 / 1 / 3 / 6;
+    }
+
+    .box3{
+        grid-area: 3 / 1 / 4 / 6;
+    }
+
+    .box4{
+        grid-area: 4 / 1 / 4 / 6;
+    }
+}
+
+@media screen and (max-width: 665px){
+
+    .eng, .fra, .deu{
+        width: 30px;
+    }
+
+    .myproject, .contact{
+        font-size: 3em;
+    }
+
+    .imga{
+        width: 400px;
+        height: 240px;
+    }
+
+    .skills-img img{
+        width: 150px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 556px){
+
+    .myproject, .contact{
+        font-size: 2.7em;
+        padding-bottom: 0;
+    }
+
+    .about{
+        margin: 30px 65px 25px;
+    }
+
+    .imga{
+        width: 320px;
+        height: 192px;
+    }
+
+    .skills-img img{
+        width: 110px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 475px){
+
+    .box i, .box2 i, .box3 i, .box4 i{
+        padding-left: 0;
+    }
+
+    .box, .box2, .box3, .box4, .email p span, .email p i{
+        font-size: 1.5rem;
+    }
+    .header{
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .skills-img img{
+        width: 100px;
+        padding: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 351px){
+
+
+    .box i, .box2 i, .box3 i, .box4{
+        padding-left: 0;
+    }
+
+    .box, .box2, .box3, .box4, .email p span, .email p i{
+        font-size: 1.2rem;
+    }
+    .header{
+        font-size: 2.3em;
+    }
+
+    .imga{
+        width: 288px;
+        height: 172px;
+    }
+    .skills-img img{
+        width: 75px;
+        padding: 5px;
+    }
+}
+

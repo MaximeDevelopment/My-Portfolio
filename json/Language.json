@@ -1,0 +1,33 @@
+{
+    "Language" : [{
+            "title" : {
+                "françaisTitle" : "Bienvenue, Brulin Maxime Développeur Web",
+                "englishTitle" : "Welcome, Brulin Maxime Web Developer",
+                "deutschTitle" : "Willkommen, Brulin Maxime Web-Entwicker"
+            },
+            "skillsText" : {
+                "françaisSkills" : "Mes Compétence",
+                "englishSkills" : "My Skills",
+                "deutschSkills" : "Meine Fähigkeiten" 
+            },
+            "projectText" : {
+                "françaisProject" : "Mes Projets",
+                "englishProject" : "My project",
+                "deutschProject" : "Mein Projekt"
+            },
+            "contactText" : {
+                "françaisContact" : "Contactez moi",
+                "englishContact" : "Contact me",
+                "deutschContact" : "Kontaktieren Sie mich"
+            },
+            "mailText" : {
+                "françaisMail" : "Envoyez moi un mail",
+                "englishMail" : "Send me a mail",
+                "deutschMail" : "Schicken Sie mir eine Mail"
+            },
+            "aboutText" : {
+                "françaisAbout" : "Je m'appelle Brulin Maxime, aussi connu sous le nom de clamaxfr. J'ai obtenu mon baccalauréat STI2D (sciences et technologies de l'industrie et du développement durable), option SIN (systèmes d'information et numérique). Je suis actuellement en formation à l'AFCI à Villeneuve d'Ascq, en France.",
+                "englishAbout" : "My name is Brulin Maxime, also known as clamaxfr. I've got my baccalauréat STI2D (sciences and technologies for industry and sustainable development), option SIN (information and digital systems). I'm currently training at the AFCI in Villeneuve d'Ascq, France.",
+                "deutschAbout" : "Mein Name ist Brulin Maxime, auch bekannt unter dem Pseudonym clamaxfr. Ich habe mein Abitur STI2D (sciences et technologies de l'industrie et du développement durable) mit der Option SIN (systèmes d'information et numérique) absolviert. Derzeit mache ich eine Ausbildung an der AFCI in Villeneuve d'Ascq in Frankreich."
+            }
+    }]}
